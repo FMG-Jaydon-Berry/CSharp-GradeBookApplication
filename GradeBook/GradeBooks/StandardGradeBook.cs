@@ -8,10 +8,10 @@ namespace GradeBook.GradeBooks
 {
     class StandardGradeBook : BaseGradeBook
     {
-        public StandardGradeBook(string name, string isWeighted) : base(name, isWeighted)
+        public StandardGradeBook(string name, bool isWeighted) : base(name, isWeighted)
         {
             Name = name;
-            IsWeighted = bool.Parse(isWeighted);
+            IsWeighted = isWeighted;
             Students = new List<Student>();
             Type = GradeBookType.Standard;
         }
