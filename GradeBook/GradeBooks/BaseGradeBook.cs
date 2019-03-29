@@ -19,7 +19,7 @@ namespace GradeBook.GradeBooks
         public BaseGradeBook(string name, string isWeighted)
         {
             Name = name;
-            IsWeighted = isWeighted;
+            IsWeighted = bool.Parse(isWeighted);
             Students = new List<Student>();
         }
 
